@@ -10,6 +10,7 @@ to trace it. Fill in the control loop to drive the robot through them.
 
 import argparse
 import math
+from turtle import speed
 
 import numpy as np
 import rclpy
@@ -20,30 +21,42 @@ from shape_interface.srv import GetShape
 
 # Wheel <-> body-velocity mapping, columns are [left, right, back] wheel
 # speed (rad/s); rows are body frame [vx, vy, wz] per unit wheel speed.
-_WHEEL_TO_BODY = np.array([
-    [0.0, 0.0, 0.0],  # vx per unit [left, right, back] wheel speed
-    [0.0, 0.0, 0.0],  # vy per unit [left, right, back] wheel speed
-    [0.0, 0.0, 0.0],  # wz per unit [left, right, back] wheel speed
-])
-_BODY_TO_WHEEL = np.linalg.inv(_WHEEL_TO_BODY)
-_CTRL_LIMIT = 0.0      # rad/s, matches lekiwi.xml actuator ctrlrange
+WHEEL_RADIUS = 0.0255
+CHASSIS_RADIUS = 0.06412
+WHEEL_ANGLES = np.radians([30.0, 150.0, 270.0])
 
-WAYPOINT_TOLERANCE = 0.0   # metres
+_BODY_TO_WHEEL = np.array([
+    [np.cos(WHEEL_ANGLES[0]), np.sin(WHEEL_ANGLES[0]), CHASSIS_RADIUS],
+    [np.cos(WHEEL_ANGLES[1]), np.sin(WHEEL_ANGLES[1]), CHASSIS_RADIUS],
+    [np.cos(WHEEL_ANGLES[2]), np.sin(WHEEL_ANGLES[2]), CHASSIS_RADIUS],
+]) / WHEEL_RADIUS
+
+_WHEEL_TO_BODY = np.linalg.inv(_BODY_TO_WHEEL)
+_CTRL_LIMIT = 10.0      # rad/s, matches lekiwi.xml actuator ctrlrange
+
+WAYPOINT_TOLERANCE = 0.03   # metres
 CIRCLE_SEGMENTS     = 36
-POSITION_KP         = 0.0
-YAW_HOLD_KP         = 0.0
-CONTROL_PERIOD      = 0.0  
+POSITION_KP         = 2.0
+YAW_HOLD_KP         = 1.5
+CONTROL_PERIOD      = 0.05  
 
 def body_to_wheels(vx, vy, wz):
     """Body-frame (vx, vy, wz) -> wheel angular velocities [left, right, back]."""
-    # TODO: convert body velocity to wheel speeds using _BODY_TO_WHEEL,
-    # clip each wheel to [-_CTRL_LIMIT, _CTRL_LIMIT], return as a list.
-    pass
+
+    body_velocity = np.array([vx, vy, wz], dtype=float)
+
+    wheels = _BODY_TO_WHEEL @ body_velocity
+
+    wheels = np.clip(wheels, -_CTRL_LIMIT, _CTRL_LIMIT)
+
+    return wheels.tolist()
 
 
 def yaw_from_quat(w, x, y, z):
-    # TODO: convert quaternion to yaw (radians).
-    pass
+    return math.atan2(
+        2.0 * (w * z + x * y),
+        1.0 - 2.0 * (y * y + z * z)
+    )
 
 
 def _regular_polygon(cx, cy, n_sides, side_length, start_angle=math.pi / 2):
@@ -96,16 +109,57 @@ def build_waypoints(shape_name, data):
 
 
 class ShapeController(Node):
+#     def __init__(self, speed):
+#         super().__init__("shape_controller")
+#         self.speed = speed
+
+#         self.pose = None        # (x, y, yaw), latest ground truth
+#         self.start_pose = None  # (x, y, yaw), recorded on first odom message
+#         self.wp_index = 0
+#         self.done = False
+# #Add the publsiher and subscriber scripts
+
     def __init__(self, speed):
         super().__init__("shape_controller")
+
         self.speed = speed
 
-        self.pose = None        # (x, y, yaw), latest ground truth
-        self.start_pose = None  # (x, y, yaw), recorded on first odom message
+        self.pose = None
+        self.start_pose = None
         self.wp_index = 0
         self.done = False
-#Add the publsiher and subscriber scripts
-    
+
+        self.cmd_pub = self.create_publisher(
+            Float64MultiArray,
+            "/wheel_commands",
+            10
+        )
+
+        self.odom_sub = self.create_subscription(
+            Odometry,
+            "/odom",
+            self._odom_cb,
+            10
+        )
+
+        shape_name, waypoints = self._request_shape()
+
+        self.shape_name = shape_name
+        self.waypoints = waypoints
+
+        self.get_logger().info(
+            f"Assigned shape: {shape_name}"
+        )
+
+        self.get_logger().info(
+            f"Waypoints: {len(waypoints)}"
+        )
+
+        self.timer = self.create_timer(
+            CONTROL_PERIOD,
+            self._control_step
+        )
+        
     def _request_shape(self):
         client = self.create_client(GetShape, "get_shape")
         while not client.wait_for_service(timeout_sec=2.0):
@@ -122,9 +176,15 @@ class ShapeController(Node):
         return response.shape_name, build_waypoints(response.shape_name, list(response.data))
 
     def _odom_cb(self, msg):
-        # TODO: extract (x, y, yaw) from msg.pose.pose into self.pose,
-        # and record self.start_pose on the first callback.
-        pass
+        p = msg.pose.pose.position
+        q = msg.pose.pose.orientation
+
+        yaw = yaw_from_quat(q.w, q.x, q.y, q.z)
+
+        self.pose = (p.x, p.y, yaw)
+
+        if self.start_pose is None:
+            self.start_pose = self.pose
 
     def _publish(self, wheels):
         self.cmd_pub.publish(Float64MultiArray(data=wheels))
@@ -133,11 +193,67 @@ class ShapeController(Node):
         if self.done or self.pose is None:
             return
 
-        # TODO: drive toward self.waypoints[self.wp_index], advance
-        # wp_index on arrival (within WAYPOINT_TOLERANCE), set self.done
-        # and stop when all waypoints are reached, then call
-        # self._publish(body_to_wheels(vx, vy, wz)) each step.
-        pass
+        if self.wp_index >= len(self.waypoints):
+            self._publish([0.0, 0.0, 0.0])
+            self.done = True
+            return
+
+        # Current pose
+        x, y, yaw = self.pose
+
+        # Current waypoint
+        target_x, target_y = self.waypoints[self.wp_index]
+
+        # Position error in world frame
+        error_x = target_x - x
+        error_y = target_y - y
+
+        distance = math.hypot(error_x, error_y)
+
+        # Check whether waypoint is reached
+        if distance <= WAYPOINT_TOLERANCE:
+            self.wp_index += 1
+
+            if self.wp_index >= len(self.waypoints):
+                self._publish([0.0, 0.0, 0.0])
+                self.done = True
+                self.get_logger().info("Shape completed!")
+                return
+
+            target_x, target_y = self.waypoints[self.wp_index]
+
+            error_x = target_x - x
+            error_y = target_y - y
+
+        # Convert world-frame position error into robot/body frame
+        body_error_x = (
+            math.cos(yaw) * error_x
+            + math.sin(yaw) * error_y
+        )
+
+        body_error_y = (
+            -math.sin(yaw) * error_x
+            + math.cos(yaw) * error_y
+        )
+
+        # Proportional position controller
+        vx = POSITION_KP * body_error_x
+        vy = POSITION_KP * body_error_y
+
+        # Limit translational speed
+        speed_mag = math.hypot(vx, vy)
+
+        if speed_mag > self.speed:
+            scale = self.speed / speed_mag
+            vx *= scale
+            vy *= scale
+
+        # Hold current heading
+        wz = 0.0
+
+        wheels = body_to_wheels(vx, vy, wz)
+
+        self._publish(wheels)
 
 
 def main():

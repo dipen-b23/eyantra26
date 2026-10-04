@@ -1,0 +1,413 @@
+[0.199s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.199s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7ed4dca612d0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7ed4dcb3e680>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7ed4dcb3e680>>)
+[0.494s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.495s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.495s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.495s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.495s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.495s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.495s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.496s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.516s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.517s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.518s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(src/hb_description) by extensions ['ignore', 'ignore_ament_install']
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(src/hb_description) by extension 'ignore'
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(src/hb_description) by extension 'ignore_ament_install'
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(src/hb_description) by extensions ['colcon_pkg']
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(src/hb_description) by extension 'colcon_pkg'
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(src/hb_description) by extensions ['colcon_meta']
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(src/hb_description) by extension 'colcon_meta'
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(src/hb_description) by extensions ['ros']
+[0.519s] Level 1:colcon.colcon_core.package_identification:_identify(src/hb_description) by extension 'ros'
+[0.524s] DEBUG:colcon.colcon_core.package_identification:Package 'src/hb_description' with type 'ros.ament_cmake' and name 'hb_description'
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(src/shape_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(src/shape_interface) by extension 'ignore'
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(src/shape_interface) by extension 'ignore_ament_install'
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(src/shape_interface) by extensions ['colcon_pkg']
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(src/shape_interface) by extension 'colcon_pkg'
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(src/shape_interface) by extensions ['colcon_meta']
+[0.524s] Level 1:colcon.colcon_core.package_identification:_identify(src/shape_interface) by extension 'colcon_meta'
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(src/shape_interface) by extensions ['ros']
+[0.525s] Level 1:colcon.colcon_core.package_identification:_identify(src/shape_interface) by extension 'ros'
+[0.526s] DEBUG:colcon.colcon_core.package_identification:Package 'src/shape_interface' with type 'ros.ament_cmake' and name 'shape_interface'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(src/task_1a) by extensions ['ignore', 'ignore_ament_install']
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(src/task_1a) by extension 'ignore'
+[0.526s] Level 1:colcon.colcon_core.package_identification:_identify(src/task_1a) by extension 'ignore_ament_install'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src/task_1a) by extensions ['colcon_pkg']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src/task_1a) by extension 'colcon_pkg'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src/task_1a) by extensions ['colcon_meta']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src/task_1a) by extension 'colcon_meta'
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src/task_1a) by extensions ['ros']
+[0.527s] Level 1:colcon.colcon_core.package_identification:_identify(src/task_1a) by extension 'ros'
+[0.528s] DEBUG:colcon.colcon_core.package_identification:Package 'src/task_1a' with type 'ros.ament_cmake' and name 'task_1a'
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src/task_1b) by extensions ['ignore', 'ignore_ament_install']
+[0.528s] Level 1:colcon.colcon_core.package_identification:_identify(src/task_1b) by extension 'ignore'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/task_1b) by extension 'ignore_ament_install'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/task_1b) by extensions ['colcon_pkg']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/task_1b) by extension 'colcon_pkg'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/task_1b) by extensions ['colcon_meta']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/task_1b) by extension 'colcon_meta'
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/task_1b) by extensions ['ros']
+[0.529s] Level 1:colcon.colcon_core.package_identification:_identify(src/task_1b) by extension 'ros'
+[0.530s] DEBUG:colcon.colcon_core.package_identification:Package 'src/task_1b' with type 'ros.ament_cmake' and name 'task_1b'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/task_1c) by extensions ['ignore', 'ignore_ament_install']
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/task_1c) by extension 'ignore'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/task_1c) by extension 'ignore_ament_install'
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/task_1c) by extensions ['colcon_pkg']
+[0.530s] Level 1:colcon.colcon_core.package_identification:_identify(src/task_1c) by extension 'colcon_pkg'
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(src/task_1c) by extensions ['colcon_meta']
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(src/task_1c) by extension 'colcon_meta'
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(src/task_1c) by extensions ['ros']
+[0.531s] Level 1:colcon.colcon_core.package_identification:_identify(src/task_1c) by extension 'ros'
+[0.532s] DEBUG:colcon.colcon_core.package_identification:Package 'src/task_1c' with type 'ros.ament_cmake' and name 'task_1c'
+[0.532s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.532s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.532s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.532s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.532s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.587s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.588s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.591s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install
+[0.595s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 388 installed packages in /opt/ros/humble
+[0.599s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.688s] Level 5:colcon.colcon_core.verb:set package 'shape_interface' build argument 'cmake_args' from command line to 'None'
+[0.689s] Level 5:colcon.colcon_core.verb:set package 'shape_interface' build argument 'cmake_target' from command line to 'None'
+[0.689s] Level 5:colcon.colcon_core.verb:set package 'shape_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.689s] Level 5:colcon.colcon_core.verb:set package 'shape_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.689s] Level 5:colcon.colcon_core.verb:set package 'shape_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.689s] Level 5:colcon.colcon_core.verb:set package 'shape_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.689s] Level 5:colcon.colcon_core.verb:set package 'shape_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.689s] Level 5:colcon.colcon_core.verb:set package 'shape_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.689s] Level 5:colcon.colcon_core.verb:set package 'shape_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.689s] DEBUG:colcon.colcon_core.verb:Building package 'shape_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/shape_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface', 'merge_install': False, 'path': '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/src/shape_interface', 'symlink_install': False, 'test_result_base': None}
+[0.690s] Level 5:colcon.colcon_core.verb:set package 'task_1b' build argument 'cmake_args' from command line to 'None'
+[0.690s] Level 5:colcon.colcon_core.verb:set package 'task_1b' build argument 'cmake_target' from command line to 'None'
+[0.690s] Level 5:colcon.colcon_core.verb:set package 'task_1b' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.690s] Level 5:colcon.colcon_core.verb:set package 'task_1b' build argument 'cmake_clean_cache' from command line to 'False'
+[0.690s] Level 5:colcon.colcon_core.verb:set package 'task_1b' build argument 'cmake_clean_first' from command line to 'False'
+[0.690s] Level 5:colcon.colcon_core.verb:set package 'task_1b' build argument 'cmake_force_configure' from command line to 'False'
+[0.690s] Level 5:colcon.colcon_core.verb:set package 'task_1b' build argument 'ament_cmake_args' from command line to 'None'
+[0.690s] Level 5:colcon.colcon_core.verb:set package 'task_1b' build argument 'catkin_cmake_args' from command line to 'None'
+[0.690s] Level 5:colcon.colcon_core.verb:set package 'task_1b' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.690s] DEBUG:colcon.colcon_core.verb:Building package 'task_1b' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/task_1b', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b', 'merge_install': False, 'path': '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/src/task_1b', 'symlink_install': False, 'test_result_base': None}
+[0.691s] Level 5:colcon.colcon_core.verb:set package 'task_1a' build argument 'cmake_args' from command line to 'None'
+[0.691s] Level 5:colcon.colcon_core.verb:set package 'task_1a' build argument 'cmake_target' from command line to 'None'
+[0.691s] Level 5:colcon.colcon_core.verb:set package 'task_1a' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.691s] Level 5:colcon.colcon_core.verb:set package 'task_1a' build argument 'cmake_clean_cache' from command line to 'False'
+[0.691s] Level 5:colcon.colcon_core.verb:set package 'task_1a' build argument 'cmake_clean_first' from command line to 'False'
+[0.691s] Level 5:colcon.colcon_core.verb:set package 'task_1a' build argument 'cmake_force_configure' from command line to 'False'
+[0.691s] Level 5:colcon.colcon_core.verb:set package 'task_1a' build argument 'ament_cmake_args' from command line to 'None'
+[0.691s] Level 5:colcon.colcon_core.verb:set package 'task_1a' build argument 'catkin_cmake_args' from command line to 'None'
+[0.691s] Level 5:colcon.colcon_core.verb:set package 'task_1a' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.691s] DEBUG:colcon.colcon_core.verb:Building package 'task_1a' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/task_1a', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a', 'merge_install': False, 'path': '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/src/task_1a', 'symlink_install': False, 'test_result_base': None}
+[0.692s] Level 5:colcon.colcon_core.verb:set package 'task_1c' build argument 'cmake_args' from command line to 'None'
+[0.692s] Level 5:colcon.colcon_core.verb:set package 'task_1c' build argument 'cmake_target' from command line to 'None'
+[0.692s] Level 5:colcon.colcon_core.verb:set package 'task_1c' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.692s] Level 5:colcon.colcon_core.verb:set package 'task_1c' build argument 'cmake_clean_cache' from command line to 'False'
+[0.692s] Level 5:colcon.colcon_core.verb:set package 'task_1c' build argument 'cmake_clean_first' from command line to 'False'
+[0.692s] Level 5:colcon.colcon_core.verb:set package 'task_1c' build argument 'cmake_force_configure' from command line to 'False'
+[0.692s] Level 5:colcon.colcon_core.verb:set package 'task_1c' build argument 'ament_cmake_args' from command line to 'None'
+[0.692s] Level 5:colcon.colcon_core.verb:set package 'task_1c' build argument 'catkin_cmake_args' from command line to 'None'
+[0.692s] Level 5:colcon.colcon_core.verb:set package 'task_1c' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.692s] DEBUG:colcon.colcon_core.verb:Building package 'task_1c' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/task_1c', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c', 'merge_install': False, 'path': '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/src/task_1c', 'symlink_install': False, 'test_result_base': None}
+[0.693s] Level 5:colcon.colcon_core.verb:set package 'hb_description' build argument 'cmake_args' from command line to 'None'
+[0.693s] Level 5:colcon.colcon_core.verb:set package 'hb_description' build argument 'cmake_target' from command line to 'None'
+[0.693s] Level 5:colcon.colcon_core.verb:set package 'hb_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.693s] Level 5:colcon.colcon_core.verb:set package 'hb_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.693s] Level 5:colcon.colcon_core.verb:set package 'hb_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.693s] Level 5:colcon.colcon_core.verb:set package 'hb_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.693s] Level 5:colcon.colcon_core.verb:set package 'hb_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.693s] Level 5:colcon.colcon_core.verb:set package 'hb_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.693s] Level 5:colcon.colcon_core.verb:set package 'hb_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.693s] DEBUG:colcon.colcon_core.verb:Building package 'hb_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/hb_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description', 'merge_install': False, 'path': '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/src/hb_description', 'symlink_install': False, 'test_result_base': None}
+[0.693s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.695s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.696s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/src/shape_interface' with build type 'ament_cmake'
+[0.696s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/src/shape_interface'
+[0.699s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.700s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.700s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.709s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/src/task_1b' with build type 'ament_cmake'
+[0.709s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/src/task_1b'
+[0.709s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.710s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.723s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/shape_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/shape_interface -- -j16 -l16
+[0.731s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/task_1b': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/task_1b -- -j16 -l16
+[1.439s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/task_1b' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/task_1b -- -j16 -l16
+[1.465s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/task_1b': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/task_1b
+[1.467s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/shape_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/shape_interface -- -j16 -l16
+[1.469s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/shape_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/shape_interface
+[1.573s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(task_1b)
+[1.574s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/task_1b' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/task_1b
+[1.578s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b' for CMake module files
+[1.579s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b' for CMake config files
+[1.579s] Level 1:colcon.colcon_core.shell:create_environment_hook('task_1b', 'cmake_prefix_path')
+[1.580s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b/share/task_1b/hook/cmake_prefix_path.ps1'
+[1.581s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b/share/task_1b/hook/cmake_prefix_path.dsv'
+[1.582s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b/share/task_1b/hook/cmake_prefix_path.sh'
+[1.584s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b/lib'
+[1.585s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b/bin'
+[1.585s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b/lib/pkgconfig/task_1b.pc'
+[1.585s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b/lib/python3.10/site-packages'
+[1.586s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b/bin'
+[1.587s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b/share/task_1b/package.ps1'
+[1.590s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b/share/task_1b/package.dsv'
+[1.591s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b/share/task_1b/package.sh'
+[1.593s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b/share/task_1b/package.bash'
+[1.595s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b/share/task_1b/package.zsh'
+[1.596s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b/share/colcon-core/packages/task_1b)
+[1.598s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(task_1b)
+[1.598s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b' for CMake module files
+[1.600s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b' for CMake config files
+[1.602s] Level 1:colcon.colcon_core.shell:create_environment_hook('task_1b', 'cmake_prefix_path')
+[1.602s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b/share/task_1b/hook/cmake_prefix_path.ps1'
+[1.603s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b/share/task_1b/hook/cmake_prefix_path.dsv'
+[1.603s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b/share/task_1b/hook/cmake_prefix_path.sh'
+[1.604s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b/lib'
+[1.604s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b/bin'
+[1.604s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b/lib/pkgconfig/task_1b.pc'
+[1.605s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b/lib/python3.10/site-packages'
+[1.605s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b/bin'
+[1.606s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b/share/task_1b/package.ps1'
+[1.606s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b/share/task_1b/package.dsv'
+[1.607s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b/share/task_1b/package.sh'
+[1.607s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b/share/task_1b/package.bash'
+[1.608s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b/share/task_1b/package.zsh'
+[1.608s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b/share/colcon-core/packages/task_1b)
+[1.610s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(shape_interface)
+[1.611s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface' for CMake module files
+[1.612s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/shape_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/shape_interface
+[1.612s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface' for CMake config files
+[1.613s] Level 1:colcon.colcon_core.shell:create_environment_hook('shape_interface', 'cmake_prefix_path')
+[1.613s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/share/shape_interface/hook/cmake_prefix_path.ps1'
+[1.614s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/share/shape_interface/hook/cmake_prefix_path.dsv'
+[1.615s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/share/shape_interface/hook/cmake_prefix_path.sh'
+[1.616s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/lib'
+[1.616s] Level 1:colcon.colcon_core.shell:create_environment_hook('shape_interface', 'ld_library_path_lib')
+[1.617s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/share/shape_interface/hook/ld_library_path_lib.ps1'
+[1.617s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/share/shape_interface/hook/ld_library_path_lib.dsv'
+[1.618s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/share/shape_interface/hook/ld_library_path_lib.sh'
+[1.619s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/bin'
+[1.619s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/lib/pkgconfig/shape_interface.pc'
+[1.619s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/lib/python3.10/site-packages'
+[1.620s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/bin'
+[1.621s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/share/shape_interface/package.ps1'
+[1.622s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/share/shape_interface/package.dsv'
+[1.623s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/share/shape_interface/package.sh'
+[1.624s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/share/shape_interface/package.bash'
+[1.624s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/share/shape_interface/package.zsh'
+[1.625s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/share/colcon-core/packages/shape_interface)
+[1.626s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(shape_interface)
+[1.627s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface' for CMake module files
+[1.628s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface' for CMake config files
+[1.630s] Level 1:colcon.colcon_core.shell:create_environment_hook('shape_interface', 'cmake_prefix_path')
+[1.630s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/share/shape_interface/hook/cmake_prefix_path.ps1'
+[1.631s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/share/shape_interface/hook/cmake_prefix_path.dsv'
+[1.632s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/share/shape_interface/hook/cmake_prefix_path.sh'
+[1.633s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/lib'
+[1.633s] Level 1:colcon.colcon_core.shell:create_environment_hook('shape_interface', 'ld_library_path_lib')
+[1.633s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/share/shape_interface/hook/ld_library_path_lib.ps1'
+[1.634s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/share/shape_interface/hook/ld_library_path_lib.dsv'
+[1.635s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/share/shape_interface/hook/ld_library_path_lib.sh'
+[1.635s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/bin'
+[1.636s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/lib/pkgconfig/shape_interface.pc'
+[1.636s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/lib/python3.10/site-packages'
+[1.637s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/bin'
+[1.637s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/share/shape_interface/package.ps1'
+[1.639s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/share/shape_interface/package.dsv'
+[1.640s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/share/shape_interface/package.sh'
+[1.641s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/share/shape_interface/package.bash'
+[1.642s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/share/shape_interface/package.zsh'
+[1.644s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/share/colcon-core/packages/shape_interface)
+[1.644s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/src/task_1a' with build type 'ament_cmake'
+[1.645s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/src/task_1a'
+[1.645s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.645s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.652s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/src/task_1c' with build type 'ament_cmake'
+[1.652s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/src/task_1c'
+[1.652s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.652s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.669s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/task_1a': CMAKE_PREFIX_PATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a:/opt/ros/humble LD_LIBRARY_PATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/lib:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/mujoco/lib /usr/bin/cmake --build /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/task_1a -- -j16 -l16
+[1.672s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/task_1c': CMAKE_PREFIX_PATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a:/opt/ros/humble LD_LIBRARY_PATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/lib:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/mujoco/lib /usr/bin/cmake --build /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/task_1c -- -j16 -l16
+[1.763s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/task_1c' returned '0': CMAKE_PREFIX_PATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a:/opt/ros/humble LD_LIBRARY_PATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/lib:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/mujoco/lib /usr/bin/cmake --build /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/task_1c -- -j16 -l16
+[1.766s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/task_1c': CMAKE_PREFIX_PATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a:/opt/ros/humble LD_LIBRARY_PATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/lib:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/mujoco/lib /usr/bin/cmake --install /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/task_1c
+[1.784s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(task_1c)
+[1.785s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c' for CMake module files
+[1.786s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/task_1c' returned '0': CMAKE_PREFIX_PATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a:/opt/ros/humble LD_LIBRARY_PATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/lib:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/mujoco/lib /usr/bin/cmake --install /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/task_1c
+[1.787s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c' for CMake config files
+[1.787s] Level 1:colcon.colcon_core.shell:create_environment_hook('task_1c', 'cmake_prefix_path')
+[1.787s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c/share/task_1c/hook/cmake_prefix_path.ps1'
+[1.788s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c/share/task_1c/hook/cmake_prefix_path.dsv'
+[1.788s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c/share/task_1c/hook/cmake_prefix_path.sh'
+[1.789s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c/lib'
+[1.789s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c/bin'
+[1.789s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c/lib/pkgconfig/task_1c.pc'
+[1.790s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c/lib/python3.10/site-packages'
+[1.791s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c/bin'
+[1.791s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c/share/task_1c/package.ps1'
+[1.792s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c/share/task_1c/package.dsv'
+[1.792s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c/share/task_1c/package.sh'
+[1.793s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c/share/task_1c/package.bash'
+[1.793s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c/share/task_1c/package.zsh'
+[1.794s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c/share/colcon-core/packages/task_1c)
+[1.795s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(task_1c)
+[1.795s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c' for CMake module files
+[1.795s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c' for CMake config files
+[1.796s] Level 1:colcon.colcon_core.shell:create_environment_hook('task_1c', 'cmake_prefix_path')
+[1.796s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c/share/task_1c/hook/cmake_prefix_path.ps1'
+[1.829s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c/share/task_1c/hook/cmake_prefix_path.dsv'
+[1.830s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c/share/task_1c/hook/cmake_prefix_path.sh'
+[1.832s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c/lib'
+[1.832s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c/bin'
+[1.832s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c/lib/pkgconfig/task_1c.pc'
+[1.833s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c/lib/python3.10/site-packages'
+[1.834s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c/bin'
+[1.835s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c/share/task_1c/package.ps1'
+[1.836s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c/share/task_1c/package.dsv'
+[1.837s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c/share/task_1c/package.sh'
+[1.838s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c/share/task_1c/package.bash'
+[1.839s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c/share/task_1c/package.zsh'
+[1.840s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c/share/colcon-core/packages/task_1c)
+[2.363s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/task_1a' returned '0': CMAKE_PREFIX_PATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a:/opt/ros/humble LD_LIBRARY_PATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/lib:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/mujoco/lib /usr/bin/cmake --build /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/task_1a -- -j16 -l16
+[2.365s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/task_1a': CMAKE_PREFIX_PATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a:/opt/ros/humble LD_LIBRARY_PATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/lib:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/mujoco/lib /usr/bin/cmake --install /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/task_1a
+[2.464s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(task_1a)
+[2.464s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a' for CMake module files
+[2.465s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/task_1a' returned '0': CMAKE_PREFIX_PATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a:/opt/ros/humble LD_LIBRARY_PATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/lib:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/mujoco/lib /usr/bin/cmake --install /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/task_1a
+[2.466s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a' for CMake config files
+[2.466s] Level 1:colcon.colcon_core.shell:create_environment_hook('task_1a', 'cmake_prefix_path')
+[2.467s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/share/task_1a/hook/cmake_prefix_path.ps1'
+[2.467s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/share/task_1a/hook/cmake_prefix_path.dsv'
+[2.468s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/share/task_1a/hook/cmake_prefix_path.sh'
+[2.468s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/lib'
+[2.469s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/bin'
+[2.469s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/lib/pkgconfig/task_1a.pc'
+[2.469s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/lib/python3.10/site-packages'
+[2.470s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/bin'
+[2.470s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/share/task_1a/package.ps1'
+[2.471s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/share/task_1a/package.dsv'
+[2.472s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/share/task_1a/package.sh'
+[2.473s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/share/task_1a/package.bash'
+[2.474s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/share/task_1a/package.zsh'
+[2.474s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/share/colcon-core/packages/task_1a)
+[2.475s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(task_1a)
+[2.476s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a' for CMake module files
+[2.476s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a' for CMake config files
+[2.477s] Level 1:colcon.colcon_core.shell:create_environment_hook('task_1a', 'cmake_prefix_path')
+[2.477s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/share/task_1a/hook/cmake_prefix_path.ps1'
+[2.478s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/share/task_1a/hook/cmake_prefix_path.dsv'
+[2.478s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/share/task_1a/hook/cmake_prefix_path.sh'
+[2.479s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/lib'
+[2.479s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/bin'
+[2.479s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/lib/pkgconfig/task_1a.pc'
+[2.480s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/lib/python3.10/site-packages'
+[2.480s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/bin'
+[2.480s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/share/task_1a/package.ps1'
+[2.481s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/share/task_1a/package.dsv'
+[2.481s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/share/task_1a/package.sh'
+[2.482s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/share/task_1a/package.bash'
+[2.483s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/share/task_1a/package.zsh'
+[2.484s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/share/colcon-core/packages/task_1a)
+[2.484s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/src/hb_description' with build type 'ament_cmake'
+[2.484s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/src/hb_description'
+[2.485s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.485s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.507s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/hb_description': CMAKE_PREFIX_PATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description:/opt/ros/humble LD_LIBRARY_PATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/lib:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/mujoco/lib /usr/bin/cmake --build /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/hb_description -- -j16 -l16
+[2.587s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/hb_description' returned '0': CMAKE_PREFIX_PATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description:/opt/ros/humble LD_LIBRARY_PATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/lib:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/mujoco/lib /usr/bin/cmake --build /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/hb_description -- -j16 -l16
+[2.590s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/hb_description': CMAKE_PREFIX_PATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description:/opt/ros/humble LD_LIBRARY_PATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/lib:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/mujoco/lib /usr/bin/cmake --install /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/hb_description
+[2.610s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hb_description)
+[2.611s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description' for CMake module files
+[2.612s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/hb_description' returned '0': CMAKE_PREFIX_PATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1c:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1b:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description:/opt/ros/humble LD_LIBRARY_PATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/lib:/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/opt/mujoco/lib /usr/bin/cmake --install /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/hb_description
+[2.613s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description' for CMake config files
+[2.613s] Level 1:colcon.colcon_core.shell:create_environment_hook('hb_description', 'cmake_prefix_path')
+[2.613s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/share/hb_description/hook/cmake_prefix_path.ps1'
+[2.614s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/share/hb_description/hook/cmake_prefix_path.dsv'
+[2.614s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/share/hb_description/hook/cmake_prefix_path.sh'
+[2.615s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/lib'
+[2.615s] Level 1:colcon.colcon_core.shell:create_environment_hook('hb_description', 'ld_library_path_lib')
+[2.615s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/share/hb_description/hook/ld_library_path_lib.ps1'
+[2.616s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/share/hb_description/hook/ld_library_path_lib.dsv'
+[2.616s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/share/hb_description/hook/ld_library_path_lib.sh'
+[2.617s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/bin'
+[2.617s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/lib/pkgconfig/hb_description.pc'
+[2.617s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/lib/python3.10/site-packages'
+[2.618s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/bin'
+[2.618s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/share/hb_description/package.ps1'
+[2.619s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/share/hb_description/package.dsv'
+[2.619s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/share/hb_description/package.sh'
+[2.620s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/share/hb_description/package.bash'
+[2.620s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/share/hb_description/package.zsh'
+[2.621s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/share/colcon-core/packages/hb_description)
+[2.621s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hb_description)
+[2.622s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description' for CMake module files
+[2.622s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description' for CMake config files
+[2.623s] Level 1:colcon.colcon_core.shell:create_environment_hook('hb_description', 'cmake_prefix_path')
+[2.623s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/share/hb_description/hook/cmake_prefix_path.ps1'
+[2.663s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/share/hb_description/hook/cmake_prefix_path.dsv'
+[2.664s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/share/hb_description/hook/cmake_prefix_path.sh'
+[2.665s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/lib'
+[2.666s] Level 1:colcon.colcon_core.shell:create_environment_hook('hb_description', 'ld_library_path_lib')
+[2.666s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/share/hb_description/hook/ld_library_path_lib.ps1'
+[2.667s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/share/hb_description/hook/ld_library_path_lib.dsv'
+[2.667s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/share/hb_description/hook/ld_library_path_lib.sh'
+[2.668s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/bin'
+[2.668s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/lib/pkgconfig/hb_description.pc'
+[2.668s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/lib/python3.10/site-packages'
+[2.669s] Level 1:colcon.colcon_core.environment:checking '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/bin'
+[2.669s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/share/hb_description/package.ps1'
+[2.670s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/share/hb_description/package.dsv'
+[2.671s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/share/hb_description/package.sh'
+[2.672s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/share/hb_description/package.bash'
+[2.672s] INFO:colcon.colcon_core.shell:Creating package script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/share/hb_description/package.zsh'
+[2.673s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/hb_description/share/colcon-core/packages/hb_description)
+[2.674s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.674s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.675s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.675s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.683s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.684s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.684s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.703s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.704s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/local_setup.ps1'
+[2.706s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/_local_setup_util_ps1.py'
+[2.710s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/setup.ps1'
+[2.713s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/local_setup.sh'
+[2.714s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/_local_setup_util_sh.py'
+[2.715s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/setup.sh'
+[2.718s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/local_setup.bash'
+[2.719s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/setup.bash'
+[2.721s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/local_setup.zsh'
+[2.722s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/setup.zsh'

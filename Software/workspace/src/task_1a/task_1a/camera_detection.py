@@ -1,9 +1,9 @@
+#!/usr/bin/env python3
 # Copyright (c) 2026 e-Yantra, IIT Bombay. All rights reserved.
 # These simulation files and source code are the intellectual property of e-Yantra,
 # IIT Bombay, provided solely for eYRC 2026-27 (Theme: Hola The Explorer).
 # Sharing or redistribution of this material, in whole or in part, is not permitted.
 
-#!/usr/bin/env python3
 '''
 *****************************************************************************************
 *
@@ -105,7 +105,7 @@ HOUGH_MIN_LENGTH = 35
 HOUGH_MAX_GAP = 25
 
 MIN_TRAPEZOID_AREA = 1200       # px^2, throws away small enclosed blobs
-PARALLEL_TOLERANCE_DEG = 7      # two sides count as parallel within this angle
+PARALLEL_TOLERANCE_DEG = 6      # two sides count as parallel within this angle
 
 # Converting and printing at the full frame rate would be unreadable and would
 # put ~90 service calls a second on the wire for no benefit.
@@ -145,12 +145,50 @@ def centre_of_quad(corners):
 
     cx, cy = 0.0, 0.0
 
-    ##############  ADD YOUR CODE HERE  ##############
+    contour = corners.astype(np.float32).reshape((-1, 1, 2))
+    M = cv2.moments(contour)
 
-    ##################################################
+    if abs(M["m00"]) < 1e-6:
+        return 0.0, 0.0
+
+    cx = M["m10"] / M["m00"]
+    cy = M["m01"] / M["m00"]
 
     return cx, cy
 
+def angle_between(p1, p2):
+    angle = math.degrees(math.atan2(
+        p2[1] - p1[1],
+        p2[0] - p1[0]
+    ))
+    return angle % 180
+
+
+def angle_difference(a, b):
+    diff = abs(a - b)
+    return min(diff, 180 - diff)
+
+
+def is_trapezoid(corners):
+    angles = []
+
+    for i in range(4):
+        p1 = corners[i]
+        p2 = corners[(i + 1) % 4]
+        angles.append(angle_between(p1, p2))
+
+    pair1 = angle_difference(angles[0], angles[2])
+    pair2 = angle_difference(angles[1], angles[3])
+
+    parallel_pairs = 0
+
+    if pair1 <= PARALLEL_TOLERANCE_DEG:
+        parallel_pairs += 1
+
+    if pair2 <= PARALLEL_TOLERANCE_DEG:
+        parallel_pairs += 1
+
+    return parallel_pairs == 1
 
 ##############################################################
 def find_trapezoids(frame):
@@ -243,14 +281,185 @@ def find_trapezoids(frame):
     binary = np.zeros(frame.shape[:2], np.uint8)
     trapezoids = []
 
-    ##############  ADD YOUR CODE HERE  ##############
+    # --------------------------------------------------
+    # 1. Crop arena
+    # --------------------------------------------------
 
-    ##################################################
+    crop = frame[ARENA_Y0:ARENA_Y1 + 1,
+                 ARENA_X0:ARENA_X1 + 1]
+
+    # --------------------------------------------------
+    # 2. LAB colour distance from floor
+    # --------------------------------------------------
+
+    lab = cv2.cvtColor(crop, cv2.COLOR_BGR2LAB)
+
+    floor_color = []
+
+    for i in range(3):
+        channel = lab[:, :, i]
+        hist = np.bincount(channel.ravel(), minlength=256)
+        floor_color.append(np.argmax(hist))
+
+    floor_color = np.array(floor_color, dtype=np.float32)
+
+    diff = lab.astype(np.float32) - floor_color
+
+    distance = np.sqrt(np.sum(diff * diff, axis=2))
+
+    mask = np.zeros(distance.shape, dtype=np.uint8)
+    mask[distance > SAND_DISTANCE] = 255
+
+    # --------------------------------------------------
+    # 3. Morphological closing
+    # --------------------------------------------------
+
+    kernel = cv2.getStructuringElement(
+        cv2.MORPH_RECT,
+        (3, 3)
+    )
+
+    mask = cv2.morphologyEx(
+        mask,
+        cv2.MORPH_CLOSE,
+        kernel,
+        iterations=1
+    )
+
+    # --------------------------------------------------
+    # 4. Canny + Hough
+    # --------------------------------------------------
+
+    edges = cv2.Canny(mask, 50, 150)
+
+    lines = cv2.HoughLinesP(
+        edges,
+        1,
+        np.pi / 180,
+        HOUGH_THRESHOLD,
+        minLineLength=HOUGH_MIN_LENGTH,
+        maxLineGap=HOUGH_MAX_GAP
+    )
+
+    # --------------------------------------------------
+    # 5. Draw Hough lines onto scratch image
+    # --------------------------------------------------
+
+    scratch = np.zeros_like(mask)
+
+    if lines is not None:
+
+        for line in lines:
+
+            x1, y1, x2, y2 = line[0]
+
+            cv2.line(
+                scratch,
+                (x1, y1),
+                (x2, y2),
+                255,
+                3
+            )
+
+    close_kernel = cv2.getStructuringElement(
+        cv2.MORPH_RECT,
+        (5, 5)
+    )
+
+    scratch = cv2.morphologyEx(
+        scratch,
+        cv2.MORPH_CLOSE,
+        close_kernel,
+        iterations=1
+    )
+
+    # --------------------------------------------------
+    # 6. Find contours
+    # --------------------------------------------------
+
+    contours, hierarchy = cv2.findContours(
+        scratch,
+        cv2.RETR_CCOMP,
+        cv2.CHAIN_APPROX_SIMPLE
+    )
+
+    if hierarchy is None:
+        return binary, trapezoids
+
+    hierarchy = hierarchy[0]
+
+    # --------------------------------------------------
+    # 7. Find 4-sided convex contours
+    # --------------------------------------------------
+
+    for i, contour in enumerate(contours):
+
+        # Keep only inner contours
+        if hierarchy[i][3] < 0:
+            continue
+
+        area = cv2.contourArea(contour)
+
+        if area < MIN_TRAPEZOID_AREA:
+            continue
+
+        perimeter = cv2.arcLength(
+            contour,
+            True
+        )
+
+        approx = cv2.approxPolyDP(
+            contour,
+            0.03 * perimeter,
+            True
+        )
+
+        if len(approx) != 4:
+            continue
+
+        if not cv2.isContourConvex(approx):
+            continue
+
+        corners = approx.reshape(4, 2).astype(np.float32)
+
+        # --------------------------------------------------
+        # 8. Reject rectangles / non-trapezoids
+        # --------------------------------------------------
+
+        if not is_trapezoid(corners):
+            continue
+
+        # --------------------------------------------------
+        # 9. Convert crop coordinates -> frame coordinates
+        # --------------------------------------------------
+
+        corners[:, 0] += ARENA_X0
+        corners[:, 1] += ARENA_Y0
+
+        cx, cy = centre_of_quad(corners)
+
+        trapezoids.append(
+            (cx, cy, corners)
+        )
+
+    # --------------------------------------------------
+    # 10. Draw ONLY accepted trapezoid borders
+    # --------------------------------------------------
+
+    for cx, cy, corners in trapezoids:
+
+        pts = np.round(corners).astype(np.int32)
+
+        cv2.polylines(
+            binary,
+            [pts],
+            True,
+            255,
+            2
+        )
 
     return binary, trapezoids
 
-
-##############################################################
 def main():
     """
     Purpose:
@@ -309,8 +518,11 @@ def main():
             fps = (len(stamps) - 1) / span if span > 0 else 0.0
 
         binary, trapezoids = find_trapezoids(frame)
+        # print("shape:", binary.shape)
+        # print("unique:", np.unique(binary))
+        # print("trapezoids:", len(trapezoids))
 
-        # overlay: red outline + yellow centre dot for every detection
+
         for cx, cy, corners in trapezoids:
             cv2.polylines(frame, [np.round(corners).astype(np.int32)], True, (0, 0, 255), 2)
             cv2.circle(frame, (int(round(cx)), int(round(cy))), 6, (0, 255, 255), -1)
@@ -327,41 +539,13 @@ def main():
             last_report = now
             print(f"\n{len(trapezoids)} trapezoid(s):")
 
-            # sorted top-to-bottom, then left-to-right, so the printed order is
-            # stable from frame to frame
             for cx, cy, _ in sorted(trapezoids, key=lambda t: (t[1], t[0])):
 
-                ##############  ADD YOUR CODE HERE  ##############
-                #
-                # Convert this one pixel centre to world coordinates:
-                #
-                #   a. Build a PixelToWorld.Request() and fill in its
-                #      `pixel_x` and `pixel_y` fields (they are float64 --
-                #      cast, or the service call will reject them).
-                #   b. Send it with the ASYNCHRONOUS client call, then wait for
-                #      the answer with a spin-until-complete helper and a
-                #      timeout of about 1 second. Never use the blocking call
-                #      here -- it deadlocks when you are already spinning.
-                #   c. Read the result. Three cases to print, all of them:
-                #        - result is None                 -> the call timed out
-                #        - result.success is False        -> print .message
-                #        - otherwise                      -> print .world_x and
-                #                                            .world_y, in metres
-                #
-                # Suggested output format:
-                #   print(f"  pixel ({cx:7.2f}, {cy:7.2f})  ->  "
-                #         f"world ({wx:6.3f}, {wy:6.3f}) m")
-                #
-                # The service definition is in
-                #   src/shape_interface/srv/PixelToWorld.srv
-                # Read it -- it tells you the exact field names.
-
-                pass
-
-                ##################################################
-
+               pass
+        cv2.imwrite("HE_1234_binary.png", binary)
         if (cv2.waitKey(1) & 0xFF) == ord('q'):
             break
+        
 
     cap.release()
     cv2.destroyAllWindows()
@@ -369,6 +553,5 @@ def main():
     rclpy.shutdown()
 
 
-##############################################################
 if __name__ == "__main__":
     main()

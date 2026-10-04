@@ -1,0 +1,42 @@
+[0.023s] Invoking command in '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/task_1a': AMENT_PREFIX_PATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/task_1a -- -j16 -l16
+[0.150s] Built target ament_cmake_python_copy_task_1a_setup
+[0.150s] Built target ament_cmake_python_copy_task_1a
+[0.589s] running egg_info
+[0.590s] writing task_1a.egg-info/PKG-INFO
+[0.591s] writing dependency_links to task_1a.egg-info/dependency_links.txt
+[0.591s] writing top-level names to task_1a.egg-info/top_level.txt
+[0.596s] reading manifest file 'task_1a.egg-info/SOURCES.txt'
+[0.599s] writing manifest file 'task_1a.egg-info/SOURCES.txt'
+[0.647s] Built target ament_cmake_python_build_task_1a_egg
+[0.672s] Invoked command in '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/task_1a' returned '0': AMENT_PREFIX_PATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/task_1a -- -j16 -l16
+[0.675s] Invoking command in '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/task_1a': AMENT_PREFIX_PATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/task_1a
+[0.692s] -- Install configuration: ""
+[0.693s] -- Up-to-date: /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/lib/task_1a/pixel_to_world_service
+[0.694s] -- Up-to-date: /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/share/task_1a/environment/pythonpath.sh
+[0.694s] -- Up-to-date: /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/share/task_1a/environment/pythonpath.dsv
+[0.695s] -- Up-to-date: /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/local/lib/python3.10/dist-packages/task_1a-0.0.1-py3.10.egg-info
+[0.695s] -- Installing: /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/local/lib/python3.10/dist-packages/task_1a-0.0.1-py3.10.egg-info/SOURCES.txt
+[0.696s] -- Installing: /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/local/lib/python3.10/dist-packages/task_1a-0.0.1-py3.10.egg-info/top_level.txt
+[0.696s] -- Installing: /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/local/lib/python3.10/dist-packages/task_1a-0.0.1-py3.10.egg-info/dependency_links.txt
+[0.696s] -- Installing: /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/local/lib/python3.10/dist-packages/task_1a-0.0.1-py3.10.egg-info/PKG-INFO
+[0.697s] -- Up-to-date: /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/local/lib/python3.10/dist-packages/task_1a
+[0.697s] -- Up-to-date: /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/local/lib/python3.10/dist-packages/task_1a/camera_detection.py
+[0.697s] -- Up-to-date: /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/local/lib/python3.10/dist-packages/task_1a/__init__.py
+[0.757s] Listing '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/local/lib/python3.10/dist-packages/task_1a'...
+[0.765s] -- Up-to-date: /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/lib/task_1a/camera_detection
+[0.766s] -- Up-to-date: /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/share/ament_index/resource_index/package_run_dependencies/task_1a
+[0.766s] -- Up-to-date: /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/share/ament_index/resource_index/parent_prefix_path/task_1a
+[0.766s] -- Up-to-date: /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/share/task_1a/environment/ament_prefix_path.sh
+[0.767s] -- Up-to-date: /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/share/task_1a/environment/ament_prefix_path.dsv
+[0.767s] -- Up-to-date: /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/share/task_1a/environment/path.sh
+[0.767s] -- Up-to-date: /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/share/task_1a/environment/path.dsv
+[0.767s] -- Up-to-date: /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/share/task_1a/local_setup.bash
+[0.767s] -- Up-to-date: /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/share/task_1a/local_setup.sh
+[0.767s] -- Up-to-date: /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/share/task_1a/local_setup.zsh
+[0.767s] -- Up-to-date: /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/share/task_1a/local_setup.dsv
+[0.768s] -- Installing: /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/share/task_1a/package.dsv
+[0.768s] -- Up-to-date: /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/share/ament_index/resource_index/packages/task_1a
+[0.768s] -- Up-to-date: /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/share/task_1a/cmake/task_1aConfig.cmake
+[0.768s] -- Up-to-date: /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/share/task_1a/cmake/task_1aConfig-version.cmake
+[0.768s] -- Up-to-date: /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/task_1a/share/task_1a/package.xml
+[0.774s] Invoked command in '/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/task_1a' returned '0': AMENT_PREFIX_PATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/task_1a
