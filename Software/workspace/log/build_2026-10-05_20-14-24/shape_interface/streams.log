@@ -1,0 +1,306 @@
+[0.017s] Invoking command in '/home/neha/eyantra26/Software/workspace/build/shape_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/neha/ros2_ws/install/my_robot_controller:/home/neha/ros2_ws/install/launch_testing_examples:/home/neha/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/neha/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/neha/ros2_ws/install/examples_rclpy_minimal_service:/home/neha/ros2_ws/install/examples_rclpy_minimal_publisher:/home/neha/ros2_ws/install/examples_rclpy_minimal_client:/home/neha/ros2_ws/install/examples_rclpy_minimal_action_server:/home/neha/ros2_ws/install/examples_rclpy_minimal_action_client:/home/neha/ros2_ws/install/examples_rclpy_guard_conditions:/home/neha/ros2_ws/install/examples_rclpy_executors:/home/neha/prism_ws/install/subscribe_encoder_values:/home/neha/prism_ws/install/publish_pwm_values:/home/neha/prism_ws/install/publish_imu:/home/neha/prism_ws/install/odom_publisher:/home/neha/prism_ws/install/motor_control:/home/neha/prism_ws/install/encoder_reader:/home/neha/prism_ws/install/dev_sys:/home/neha/prism_ws/install/cmd_vel_to_stm32:/home/neha/prism_ws/install/bot_sys:/opt/ros/humble /usr/bin/cmake /home/neha/eyantra26/Software/workspace/src/shape_interface -DCMAKE_INSTALL_PREFIX=/home/neha/eyantra26/Software/workspace/install/shape_interface
+[0.129s] -- The C compiler identification is GNU 11.4.0
+[0.199s] -- The CXX compiler identification is GNU 11.4.0
+[0.208s] -- Detecting C compiler ABI info
+[0.286s] -- Detecting C compiler ABI info - done
+[0.290s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.291s] -- Detecting C compile features
+[0.291s] -- Detecting C compile features - done
+[0.293s] -- Detecting CXX compiler ABI info
+[0.378s] -- Detecting CXX compiler ABI info - done
+[0.389s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.389s] -- Detecting CXX compile features
+[0.390s] -- Detecting CXX compile features - done
+[0.397s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.724s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.860s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.868s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.887s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.946s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.242s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.456s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.718s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.748s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.751s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.793s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.794s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.794s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.794s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.818s] -- Found PythonExtra: .so  
+[1.880s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.911s] -- Added test 'lint_cmake' to check CMake code style
+[1.912s] -- Added test 'xmllint' to check XML markup files
+[1.914s] -- Configuring done
+[1.936s] -- Generating done
+[1.943s] -- Build files have been written to: /home/neha/eyantra26/Software/workspace/build/shape_interface
+[1.950s] Invoked command in '/home/neha/eyantra26/Software/workspace/build/shape_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/neha/ros2_ws/install/my_robot_controller:/home/neha/ros2_ws/install/launch_testing_examples:/home/neha/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/neha/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/neha/ros2_ws/install/examples_rclpy_minimal_service:/home/neha/ros2_ws/install/examples_rclpy_minimal_publisher:/home/neha/ros2_ws/install/examples_rclpy_minimal_client:/home/neha/ros2_ws/install/examples_rclpy_minimal_action_server:/home/neha/ros2_ws/install/examples_rclpy_minimal_action_client:/home/neha/ros2_ws/install/examples_rclpy_guard_conditions:/home/neha/ros2_ws/install/examples_rclpy_executors:/home/neha/prism_ws/install/subscribe_encoder_values:/home/neha/prism_ws/install/publish_pwm_values:/home/neha/prism_ws/install/publish_imu:/home/neha/prism_ws/install/odom_publisher:/home/neha/prism_ws/install/motor_control:/home/neha/prism_ws/install/encoder_reader:/home/neha/prism_ws/install/dev_sys:/home/neha/prism_ws/install/cmd_vel_to_stm32:/home/neha/prism_ws/install/bot_sys:/opt/ros/humble /usr/bin/cmake /home/neha/eyantra26/Software/workspace/src/shape_interface -DCMAKE_INSTALL_PREFIX=/home/neha/eyantra26/Software/workspace/install/shape_interface
+[1.951s] Invoking command in '/home/neha/eyantra26/Software/workspace/build/shape_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/neha/ros2_ws/install/my_robot_controller:/home/neha/ros2_ws/install/launch_testing_examples:/home/neha/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/neha/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/neha/ros2_ws/install/examples_rclpy_minimal_service:/home/neha/ros2_ws/install/examples_rclpy_minimal_publisher:/home/neha/ros2_ws/install/examples_rclpy_minimal_client:/home/neha/ros2_ws/install/examples_rclpy_minimal_action_server:/home/neha/ros2_ws/install/examples_rclpy_minimal_action_client:/home/neha/ros2_ws/install/examples_rclpy_guard_conditions:/home/neha/ros2_ws/install/examples_rclpy_executors:/home/neha/prism_ws/install/subscribe_encoder_values:/home/neha/prism_ws/install/publish_pwm_values:/home/neha/prism_ws/install/publish_imu:/home/neha/prism_ws/install/odom_publisher:/home/neha/prism_ws/install/motor_control:/home/neha/prism_ws/install/encoder_reader:/home/neha/prism_ws/install/dev_sys:/home/neha/prism_ws/install/cmd_vel_to_stm32:/home/neha/prism_ws/install/bot_sys:/opt/ros/humble /usr/bin/cmake --build /home/neha/eyantra26/Software/workspace/build/shape_interface -- -j12 -l12
+[2.012s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.023s] [  4%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.035s] [  4%] Built target ament_cmake_python_copy_shape_interface
+[2.220s] running egg_info
+[2.232s] creating shape_interface.egg-info
+[2.232s] writing shape_interface.egg-info/PKG-INFO
+[2.232s] writing dependency_links to shape_interface.egg-info/dependency_links.txt
+[2.233s] writing top-level names to shape_interface.egg-info/top_level.txt
+[2.233s] writing manifest file 'shape_interface.egg-info/SOURCES.txt'
+[2.272s] reading manifest file 'shape_interface.egg-info/SOURCES.txt'
+[2.273s] writing manifest file 'shape_interface.egg-info/SOURCES.txt'
+[2.306s] [  4%] Built target ament_cmake_python_build_shape_interface_egg
+[2.411s] [  6%] [32mBuilding C object CMakeFiles/shape_interface__rosidl_generator_c.dir/rosidl_generator_c/shape_interface/msg/detail/shape__functions.c.o[0m
+[2.411s] [  8%] [32mBuilding C object CMakeFiles/shape_interface__rosidl_generator_c.dir/rosidl_generator_c/shape_interface/srv/detail/get_shape__functions.c.o[0m
+[2.413s] [ 10%] [32mBuilding C object CMakeFiles/shape_interface__rosidl_generator_c.dir/rosidl_generator_c/shape_interface/srv/detail/pixel_to_world__functions.c.o[0m
+[2.486s] [ 10%] Built target shape_interface__cpp
+[2.496s] [ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[2.499s] [ 17%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[2.499s] [ 17%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[2.518s] [ 19%] [32m[1mLinking C shared library libshape_interface__rosidl_generator_c.so[0m
+[2.557s] [ 19%] Built target shape_interface__rosidl_generator_c
+[2.566s] [ 21%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[2.571s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[2.571s] [ 25%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[2.837s] [ 27%] [32mBuilding CXX object CMakeFiles/shape_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/shape_interface/srv/get_shape__type_support.cpp.o[0m
+[2.839s] [ 29%] [32mBuilding CXX object CMakeFiles/shape_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/shape_interface/msg/detail/dds_fastrtps/shape__type_support.cpp.o[0m
+[2.839s] [ 31%] [32mBuilding CXX object CMakeFiles/shape_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/shape_interface/msg/shape__type_support.cpp.o[0m
+[2.840s] [ 36%] [32mBuilding CXX object CMakeFiles/shape_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/shape_interface/srv/detail/dds_fastrtps/get_shape__type_support.cpp.o[0m
+[2.840s] [ 36%] [32mBuilding CXX object CMakeFiles/shape_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/shape_interface/srv/detail/dds_fastrtps/pixel_to_world__type_support.cpp.o[0m
+[2.840s] [ 38%] [32mBuilding CXX object CMakeFiles/shape_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/shape_interface/srv/pixel_to_world__type_support.cpp.o[0m
+[2.882s] [ 40%] [32m[1mLinking CXX shared library libshape_interface__rosidl_typesupport_c.so[0m
+[2.940s] [ 40%] Built target shape_interface__rosidl_typesupport_c
+[2.996s] [ 44%] [32mBuilding CXX object CMakeFiles/shape_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/shape_interface/srv/get_shape__type_support.cpp.o[0m
+[2.996s] [ 44%] [32mBuilding CXX object CMakeFiles/shape_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/shape_interface/srv/pixel_to_world__type_support.cpp.o[0m
+[2.996s] [ 46%] [32mBuilding CXX object CMakeFiles/shape_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/shape_interface/msg/shape__type_support.cpp.o[0m
+[3.062s] [ 51%] [32mBuilding CXX object CMakeFiles/shape_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/shape_interface/msg/detail/shape__type_support.cpp.o[0m
+[3.062s] [ 51%] [32mBuilding CXX object CMakeFiles/shape_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/shape_interface/srv/detail/get_shape__type_support.cpp.o[0m
+[3.065s] [ 53%] [32mBuilding CXX object CMakeFiles/shape_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/shape_interface/srv/detail/pixel_to_world__type_support.cpp.o[0m
+[3.077s] [ 55%] [32mBuilding CXX object CMakeFiles/shape_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/shape_interface/srv/detail/get_shape__type_support_c.cpp.o[0m
+[3.077s] [ 57%] [32mBuilding CXX object CMakeFiles/shape_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/shape_interface/srv/detail/pixel_to_world__type_support_c.cpp.o[0m
+[3.187s] [ 59%] [32mBuilding C object CMakeFiles/shape_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/shape_interface/srv/detail/get_shape__type_support.c.o[0m
+[3.231s] [ 61%] [32mBuilding C object CMakeFiles/shape_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/shape_interface/srv/detail/pixel_to_world__type_support.c.o[0m
+[3.273s] [ 63%] [32mBuilding CXX object CMakeFiles/shape_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/shape_interface/msg/detail/shape__type_support_c.cpp.o[0m
+[3.273s] [ 65%] [32mBuilding C object CMakeFiles/shape_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/shape_interface/msg/detail/shape__type_support.c.o[0m
+[3.317s] [ 68%] [32m[1mLinking C shared library libshape_interface__rosidl_typesupport_introspection_c.so[0m
+[3.377s] [ 68%] Built target shape_interface__rosidl_typesupport_introspection_c
+[3.474s] [ 70%] [32m[1mLinking CXX shared library libshape_interface__rosidl_typesupport_cpp.so[0m
+[3.530s] [ 70%] Built target shape_interface__rosidl_typesupport_cpp
+[3.536s] [ 72%] [32m[1mLinking CXX shared library libshape_interface__rosidl_typesupport_fastrtps_cpp.so[0m
+[3.607s] [ 72%] Built target shape_interface__rosidl_typesupport_fastrtps_cpp
+[3.706s] [ 74%] [32m[1mLinking CXX shared library libshape_interface__rosidl_typesupport_fastrtps_c.so[0m
+[3.721s] [ 76%] [32m[1mLinking CXX shared library libshape_interface__rosidl_typesupport_introspection_cpp.so[0m
+[3.768s] [ 76%] Built target shape_interface__rosidl_typesupport_fastrtps_c
+[3.805s] [ 76%] Built target shape_interface__rosidl_typesupport_introspection_cpp
+[3.831s] [ 76%] Built target shape_interface
+[3.865s] [ 78%] [34m[1mGenerating Python code for ROS interfaces[0m
+[4.327s] [ 78%] Built target shape_interface__py
+[4.351s] [ 80%] [32mBuilding C object CMakeFiles/shape_interface__rosidl_generator_py.dir/rosidl_generator_py/shape_interface/srv/_get_shape_s.c.o[0m
+[4.351s] [ 85%] [32mBuilding C object CMakeFiles/shape_interface__rosidl_generator_py.dir/rosidl_generator_py/shape_interface/msg/_shape_s.c.o[0m
+[4.351s] [ 85%] [32mBuilding C object CMakeFiles/shape_interface__rosidl_generator_py.dir/rosidl_generator_py/shape_interface/srv/_pixel_to_world_s.c.o[0m
+[4.467s] [ 87%] [32m[1mLinking C shared library rosidl_generator_py/shape_interface/libshape_interface__rosidl_generator_py.so[0m
+[4.513s] [ 87%] Built target shape_interface__rosidl_generator_py
+[4.563s] [ 89%] [32mBuilding C object CMakeFiles/shape_interface__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/shape_interface/_shape_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[4.565s] [ 91%] [32mBuilding C object CMakeFiles/shape_interface__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/shape_interface/_shape_interface_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[4.567s] [ 93%] [32mBuilding C object CMakeFiles/shape_interface__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/shape_interface/_shape_interface_s.ep.rosidl_typesupport_c.c.o[0m
+[4.671s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/shape_interface/shape_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[4.677s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/shape_interface/shape_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[4.680s] [100%] [32m[1mLinking C shared library rosidl_generator_py/shape_interface/shape_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[4.713s] [100%] Built target shape_interface__rosidl_typesupport_introspection_c__pyext
+[4.713s] [100%] Built target shape_interface__rosidl_typesupport_fastrtps_c__pyext
+[4.715s] [100%] Built target shape_interface__rosidl_typesupport_c__pyext
+[4.731s] Invoked command in '/home/neha/eyantra26/Software/workspace/build/shape_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/neha/ros2_ws/install/my_robot_controller:/home/neha/ros2_ws/install/launch_testing_examples:/home/neha/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/neha/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/neha/ros2_ws/install/examples_rclpy_minimal_service:/home/neha/ros2_ws/install/examples_rclpy_minimal_publisher:/home/neha/ros2_ws/install/examples_rclpy_minimal_client:/home/neha/ros2_ws/install/examples_rclpy_minimal_action_server:/home/neha/ros2_ws/install/examples_rclpy_minimal_action_client:/home/neha/ros2_ws/install/examples_rclpy_guard_conditions:/home/neha/ros2_ws/install/examples_rclpy_executors:/home/neha/prism_ws/install/subscribe_encoder_values:/home/neha/prism_ws/install/publish_pwm_values:/home/neha/prism_ws/install/publish_imu:/home/neha/prism_ws/install/odom_publisher:/home/neha/prism_ws/install/motor_control:/home/neha/prism_ws/install/encoder_reader:/home/neha/prism_ws/install/dev_sys:/home/neha/prism_ws/install/cmd_vel_to_stm32:/home/neha/prism_ws/install/bot_sys:/opt/ros/humble /usr/bin/cmake --build /home/neha/eyantra26/Software/workspace/build/shape_interface -- -j12 -l12
+[4.732s] Invoking command in '/home/neha/eyantra26/Software/workspace/build/shape_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/neha/ros2_ws/install/my_robot_controller:/home/neha/ros2_ws/install/launch_testing_examples:/home/neha/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/neha/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/neha/ros2_ws/install/examples_rclpy_minimal_service:/home/neha/ros2_ws/install/examples_rclpy_minimal_publisher:/home/neha/ros2_ws/install/examples_rclpy_minimal_client:/home/neha/ros2_ws/install/examples_rclpy_minimal_action_server:/home/neha/ros2_ws/install/examples_rclpy_minimal_action_client:/home/neha/ros2_ws/install/examples_rclpy_guard_conditions:/home/neha/ros2_ws/install/examples_rclpy_executors:/home/neha/prism_ws/install/subscribe_encoder_values:/home/neha/prism_ws/install/publish_pwm_values:/home/neha/prism_ws/install/publish_imu:/home/neha/prism_ws/install/odom_publisher:/home/neha/prism_ws/install/motor_control:/home/neha/prism_ws/install/encoder_reader:/home/neha/prism_ws/install/dev_sys:/home/neha/prism_ws/install/cmd_vel_to_stm32:/home/neha/prism_ws/install/bot_sys:/opt/ros/humble /usr/bin/cmake --install /home/neha/eyantra26/Software/workspace/build/shape_interface
+[4.743s] -- Install configuration: ""
+[4.743s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/ament_index/resource_index/rosidl_interfaces/shape_interface
+[4.743s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface
+[4.743s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv
+[4.743s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/get_shape.h
+[4.743s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/detail
+[4.743s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/detail/pixel_to_world__struct.h
+[4.743s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/detail/pixel_to_world__functions.c
+[4.743s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/detail/get_shape__functions.h
+[4.743s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/detail/get_shape__type_support.h
+[4.744s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/detail/pixel_to_world__type_support.h
+[4.744s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/detail/get_shape__struct.h
+[4.744s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/detail/get_shape__functions.c
+[4.744s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/detail/pixel_to_world__functions.h
+[4.744s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/pixel_to_world.h
+[4.744s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/msg
+[4.744s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/msg/detail
+[4.744s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/msg/detail/shape__struct.h
+[4.744s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/msg/detail/shape__functions.h
+[4.744s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/msg/detail/shape__functions.c
+[4.744s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/msg/detail/shape__type_support.h
+[4.744s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/msg/rosidl_generator_c__visibility_control.h
+[4.744s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/msg/shape.h
+[4.745s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/environment/library_path.sh
+[4.745s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/environment/library_path.dsv
+[4.745s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/lib/libshape_interface__rosidl_generator_c.so
+[4.745s] -- Set runtime path of "/home/neha/eyantra26/Software/workspace/install/shape_interface/lib/libshape_interface__rosidl_generator_c.so" to ""
+[4.745s] -- Up-to-date: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface
+[4.745s] -- Up-to-date: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv
+[4.745s] -- Up-to-date: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/detail
+[4.745s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/detail/get_shape__rosidl_typesupport_fastrtps_c.h
+[4.745s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/detail/pixel_to_world__rosidl_typesupport_fastrtps_c.h
+[4.745s] -- Up-to-date: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/msg
+[4.746s] -- Up-to-date: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/msg/detail
+[4.746s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/msg/detail/shape__rosidl_typesupport_fastrtps_c.h
+[4.746s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[4.746s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/lib/libshape_interface__rosidl_typesupport_fastrtps_c.so
+[4.746s] -- Set runtime path of "/home/neha/eyantra26/Software/workspace/install/shape_interface/lib/libshape_interface__rosidl_typesupport_fastrtps_c.so" to ""
+[4.746s] -- Up-to-date: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface
+[4.746s] -- Up-to-date: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv
+[4.746s] -- Up-to-date: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/detail
+[4.746s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/detail/pixel_to_world__rosidl_typesupport_introspection_c.h
+[4.746s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/detail/get_shape__rosidl_typesupport_introspection_c.h
+[4.746s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/detail/get_shape__type_support.c
+[4.746s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/detail/pixel_to_world__type_support.c
+[4.747s] -- Up-to-date: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/msg
+[4.747s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[4.747s] -- Up-to-date: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/msg/detail
+[4.747s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/msg/detail/shape__rosidl_typesupport_introspection_c.h
+[4.747s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/msg/detail/shape__type_support.c
+[4.747s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/lib/libshape_interface__rosidl_typesupport_introspection_c.so
+[4.747s] -- Set runtime path of "/home/neha/eyantra26/Software/workspace/install/shape_interface/lib/libshape_interface__rosidl_typesupport_introspection_c.so" to ""
+[4.747s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/lib/libshape_interface__rosidl_typesupport_c.so
+[4.747s] -- Set runtime path of "/home/neha/eyantra26/Software/workspace/install/shape_interface/lib/libshape_interface__rosidl_typesupport_c.so" to ""
+[4.748s] -- Up-to-date: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface
+[4.748s] -- Up-to-date: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv
+[4.748s] -- Up-to-date: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/detail
+[4.748s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/detail/pixel_to_world__traits.hpp
+[4.748s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/detail/get_shape__struct.hpp
+[4.748s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/detail/pixel_to_world__struct.hpp
+[4.748s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/detail/pixel_to_world__builder.hpp
+[4.748s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/detail/get_shape__type_support.hpp
+[4.748s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/detail/get_shape__traits.hpp
+[4.748s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/detail/get_shape__builder.hpp
+[4.748s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/detail/pixel_to_world__type_support.hpp
+[4.748s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/get_shape.hpp
+[4.748s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/pixel_to_world.hpp
+[4.748s] -- Up-to-date: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/msg
+[4.749s] -- Up-to-date: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/msg/detail
+[4.749s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/msg/detail/shape__traits.hpp
+[4.749s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/msg/detail/shape__struct.hpp
+[4.749s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/msg/detail/shape__builder.hpp
+[4.749s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/msg/detail/shape__type_support.hpp
+[4.749s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/msg/rosidl_generator_cpp__visibility_control.hpp
+[4.749s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/msg/shape.hpp
+[4.749s] -- Up-to-date: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface
+[4.749s] -- Up-to-date: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv
+[4.749s] -- Up-to-date: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/detail
+[4.749s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/detail/pixel_to_world__rosidl_typesupport_fastrtps_cpp.hpp
+[4.749s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/detail/get_shape__rosidl_typesupport_fastrtps_cpp.hpp
+[4.749s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/detail/dds_fastrtps
+[4.750s] -- Up-to-date: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/msg
+[4.750s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[4.750s] -- Up-to-date: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/msg/detail
+[4.750s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/msg/detail/dds_fastrtps
+[4.750s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/msg/detail/shape__rosidl_typesupport_fastrtps_cpp.hpp
+[4.750s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/lib/libshape_interface__rosidl_typesupport_fastrtps_cpp.so
+[4.750s] -- Set runtime path of "/home/neha/eyantra26/Software/workspace/install/shape_interface/lib/libshape_interface__rosidl_typesupport_fastrtps_cpp.so" to ""
+[4.750s] -- Up-to-date: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface
+[4.750s] -- Up-to-date: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv
+[4.750s] -- Up-to-date: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/detail
+[4.750s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/detail/pixel_to_world__type_support.cpp
+[4.750s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/detail/get_shape__type_support.cpp
+[4.750s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/detail/get_shape__rosidl_typesupport_introspection_cpp.hpp
+[4.750s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/srv/detail/pixel_to_world__rosidl_typesupport_introspection_cpp.hpp
+[4.750s] -- Up-to-date: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/msg
+[4.750s] -- Up-to-date: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/msg/detail
+[4.750s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/msg/detail/shape__rosidl_typesupport_introspection_cpp.hpp
+[4.751s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/include/shape_interface/shape_interface/msg/detail/shape__type_support.cpp
+[4.751s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/lib/libshape_interface__rosidl_typesupport_introspection_cpp.so
+[4.751s] -- Set runtime path of "/home/neha/eyantra26/Software/workspace/install/shape_interface/lib/libshape_interface__rosidl_typesupport_introspection_cpp.so" to ""
+[4.751s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/lib/libshape_interface__rosidl_typesupport_cpp.so
+[4.751s] -- Set runtime path of "/home/neha/eyantra26/Software/workspace/install/shape_interface/lib/libshape_interface__rosidl_typesupport_cpp.so" to ""
+[4.751s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/environment/pythonpath.sh
+[4.751s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/environment/pythonpath.dsv
+[4.751s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface-0.0.0-py3.10.egg-info
+[4.751s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface-0.0.0-py3.10.egg-info/dependency_links.txt
+[4.751s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface-0.0.0-py3.10.egg-info/top_level.txt
+[4.751s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface-0.0.0-py3.10.egg-info/PKG-INFO
+[4.751s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface-0.0.0-py3.10.egg-info/SOURCES.txt
+[4.752s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface
+[4.752s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface/__init__.py
+[4.752s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface/srv
+[4.752s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface/srv/_pixel_to_world.py
+[4.752s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface/srv/__init__.py
+[4.752s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface/srv/_get_shape.py
+[4.752s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface/srv/_get_shape_s.c
+[4.752s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface/srv/_pixel_to_world_s.c
+[4.752s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface/_shape_interface_s.ep.rosidl_typesupport_fastrtps_c.c
+[4.752s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface/libshape_interface__rosidl_generator_py.so
+[4.752s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface/shape_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.752s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface/_shape_interface_s.ep.rosidl_typesupport_c.c
+[4.752s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface/shape_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[4.752s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface/_shape_interface_s.ep.rosidl_typesupport_introspection_c.c
+[4.752s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface/shape_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.752s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface/msg
+[4.753s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface/msg/__init__.py
+[4.753s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface/msg/_shape.py
+[4.753s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface/msg/_shape_s.c
+[4.798s] Listing '/home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface'...
+[4.798s] Compiling '/home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface/__init__.py'...
+[4.798s] Listing '/home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface/msg'...
+[4.798s] Compiling '/home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface/msg/__init__.py'...
+[4.798s] Compiling '/home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface/msg/_shape.py'...
+[4.798s] Listing '/home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface/srv'...
+[4.798s] Compiling '/home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface/srv/__init__.py'...
+[4.798s] Compiling '/home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface/srv/_get_shape.py'...
+[4.798s] Compiling '/home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface/srv/_pixel_to_world.py'...
+[4.801s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface/shape_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.802s] -- Set runtime path of "/home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface/shape_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[4.802s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface/shape_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.802s] -- Set runtime path of "/home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface/shape_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[4.803s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface/shape_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[4.803s] -- Set runtime path of "/home/neha/eyantra26/Software/workspace/install/shape_interface/local/lib/python3.10/dist-packages/shape_interface/shape_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[4.803s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/lib/libshape_interface__rosidl_generator_py.so
+[4.803s] -- Set runtime path of "/home/neha/eyantra26/Software/workspace/install/shape_interface/lib/libshape_interface__rosidl_generator_py.so" to ""
+[4.804s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/srv/GetShape.idl
+[4.804s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/srv/PixelToWorld.idl
+[4.804s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/msg/Shape.idl
+[4.804s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/srv/GetShape.srv
+[4.804s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/srv/GetShape_Request.msg
+[4.804s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/srv/GetShape_Response.msg
+[4.804s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/srv/PixelToWorld.srv
+[4.805s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/srv/PixelToWorld_Request.msg
+[4.805s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/srv/PixelToWorld_Response.msg
+[4.805s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/msg/Shape.msg
+[4.805s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/ament_index/resource_index/package_run_dependencies/shape_interface
+[4.805s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/ament_index/resource_index/parent_prefix_path/shape_interface
+[4.805s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/environment/ament_prefix_path.sh
+[4.805s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/environment/ament_prefix_path.dsv
+[4.806s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/environment/path.sh
+[4.806s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/environment/path.dsv
+[4.806s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/local_setup.bash
+[4.806s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/local_setup.sh
+[4.806s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/local_setup.zsh
+[4.806s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/local_setup.dsv
+[4.807s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/package.dsv
+[4.807s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/ament_index/resource_index/packages/shape_interface
+[4.807s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/cmake/export_shape_interface__rosidl_generator_cExport.cmake
+[4.807s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/cmake/export_shape_interface__rosidl_generator_cExport-noconfig.cmake
+[4.807s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/cmake/export_shape_interface__rosidl_typesupport_fastrtps_cExport.cmake
+[4.808s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/cmake/export_shape_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[4.808s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/cmake/shape_interface__rosidl_typesupport_introspection_cExport.cmake
+[4.808s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/cmake/shape_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[4.808s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/cmake/shape_interface__rosidl_typesupport_cExport.cmake
+[4.808s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/cmake/shape_interface__rosidl_typesupport_cExport-noconfig.cmake
+[4.808s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/cmake/export_shape_interface__rosidl_generator_cppExport.cmake
+[4.808s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/cmake/export_shape_interface__rosidl_typesupport_fastrtps_cppExport.cmake
+[4.809s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/cmake/export_shape_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[4.809s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/cmake/shape_interface__rosidl_typesupport_introspection_cppExport.cmake
+[4.809s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/cmake/shape_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[4.809s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/cmake/shape_interface__rosidl_typesupport_cppExport.cmake
+[4.809s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/cmake/shape_interface__rosidl_typesupport_cppExport-noconfig.cmake
+[4.809s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/cmake/export_shape_interface__rosidl_generator_pyExport.cmake
+[4.810s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/cmake/export_shape_interface__rosidl_generator_pyExport-noconfig.cmake
+[4.810s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/cmake/rosidl_cmake-extras.cmake
+[4.810s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.810s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[4.810s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/cmake/ament_cmake_export_targets-extras.cmake
+[4.810s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[4.810s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.811s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[4.811s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/cmake/shape_interfaceConfig.cmake
+[4.811s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/cmake/shape_interfaceConfig-version.cmake
+[4.811s] -- Installing: /home/neha/eyantra26/Software/workspace/install/shape_interface/share/shape_interface/package.xml
+[4.814s] Invoked command in '/home/neha/eyantra26/Software/workspace/build/shape_interface' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/neha/ros2_ws/install/my_robot_controller:/home/neha/ros2_ws/install/launch_testing_examples:/home/neha/ros2_ws/install/examples_rclpy_pointcloud_publisher:/home/neha/ros2_ws/install/examples_rclpy_minimal_subscriber:/home/neha/ros2_ws/install/examples_rclpy_minimal_service:/home/neha/ros2_ws/install/examples_rclpy_minimal_publisher:/home/neha/ros2_ws/install/examples_rclpy_minimal_client:/home/neha/ros2_ws/install/examples_rclpy_minimal_action_server:/home/neha/ros2_ws/install/examples_rclpy_minimal_action_client:/home/neha/ros2_ws/install/examples_rclpy_guard_conditions:/home/neha/ros2_ws/install/examples_rclpy_executors:/home/neha/prism_ws/install/subscribe_encoder_values:/home/neha/prism_ws/install/publish_pwm_values:/home/neha/prism_ws/install/publish_imu:/home/neha/prism_ws/install/odom_publisher:/home/neha/prism_ws/install/motor_control:/home/neha/prism_ws/install/encoder_reader:/home/neha/prism_ws/install/dev_sys:/home/neha/prism_ws/install/cmd_vel_to_stm32:/home/neha/prism_ws/install/bot_sys:/opt/ros/humble /usr/bin/cmake --install /home/neha/eyantra26/Software/workspace/build/shape_interface

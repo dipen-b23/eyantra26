@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "shape_interface__py",
+		"source" : "/home/neha/eyantra26/Software/workspace/build/shape_interface/shape_interface__py"
+	}
+}

@@ -1,8 +1,8 @@
-# Install script for directory: /home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/build/shape_interface/shape_interface__py
+# Install script for directory: /home/neha/eyantra26/Software/workspace/build/shape_interface/shape_interface__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/dipen_b23/Desktop/eyrc/eYRC_26-27_Hola-The-Explorer/Software/workspace/install/shape_interface")
+  set(CMAKE_INSTALL_PREFIX "/home/neha/eyantra26/Software/workspace/install/shape_interface")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

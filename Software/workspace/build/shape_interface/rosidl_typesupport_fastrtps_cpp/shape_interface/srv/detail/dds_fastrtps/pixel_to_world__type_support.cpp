@@ -52,7 +52,7 @@ cdr_deserialize(
   cdr >> ros_message.pixel_y;
 
   return true;
-}  // NOLINT(readability/fn_size)
+}
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_shape_interface
@@ -299,7 +299,7 @@ cdr_deserialize(
   cdr >> ros_message.world_y;
 
   return true;
-}  // NOLINT(readability/fn_size)
+}
 
 size_t
 ROSIDL_TYPESUPPORT_FASTRTPS_CPP_PUBLIC_shape_interface
